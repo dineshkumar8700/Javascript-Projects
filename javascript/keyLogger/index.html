@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Logger</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        h1{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+        .button-container{
+            display: flex;
+            width:100%;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        #log,#state{
+            background-color: orange;
+            border-radius:20px ;
+            height: 70px;
+            width: 50%;
+            border: 2px solid black;
+            font-size: 20px;
+            text-align: center;
+    
+        }
+        #state{
+            background-color: gainsboro;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Key Logger</h1>
+        <p>Subscribe to our channer</p>
+        <div class="button-container">
+            <button id="start-btn">Start Key Logging</button>
+            <button id="stop-btn">Stop Key Logging</button>
+        </div>
+        <div class="button-container">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
